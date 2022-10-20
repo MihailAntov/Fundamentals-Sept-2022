@@ -9,19 +9,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02.ChangeList", "02.ChangeL
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03.HouseParty", "03.HouseParty\03.HouseParty.csproj", "{866E3923-A1BB-40BD-8052-B96D2F9C470C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.ListOperations", "04.ListOperations\04.ListOperations.csproj", "{D481D7B0-E5BB-4DB2-9DAB-08E28698E479}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04.ListOperations", "04.ListOperations\04.ListOperations.csproj", "{D481D7B0-E5BB-4DB2-9DAB-08E28698E479}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.BombNumbers", "05.BombNumbers\05.BombNumbers.csproj", "{DA912380-ABE6-4DB7-A9B1-16F7A3FD78C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05.BombNumbers", "05.BombNumbers\05.BombNumbers.csproj", "{DA912380-ABE6-4DB7-A9B1-16F7A3FD78C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.CardsGame", "06.CardsGame\06.CardsGame.csproj", "{15947CFE-D2C1-44A9-BB75-A001B54751DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06.CardsGame", "06.CardsGame\06.CardsGame.csproj", "{15947CFE-D2C1-44A9-BB75-A001B54751DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.AppendArrays", "07.AppendArrays\07.AppendArrays.csproj", "{FE8DA03A-F6B8-4DA9-AA8A-F0CEB2B98120}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07.AppendArrays", "07.AppendArrays\07.AppendArrays.csproj", "{FE8DA03A-F6B8-4DA9-AA8A-F0CEB2B98120}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.AnonymousThreat", "08.AnonymousThreat\08.AnonymousThreat.csproj", "{8DE71C09-5748-40F5-B480-1518EF1F3D97}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08.AnonymousThreat", "08.AnonymousThreat\08.AnonymousThreat.csproj", "{8DE71C09-5748-40F5-B480-1518EF1F3D97}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.PokemonDontGo", "09.PokemonDontGo\09.PokemonDontGo.csproj", "{2FEFE3CE-6AEC-479F-8F46-955D6EAE1F57}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09.PokemonDontGo", "09.PokemonDontGo\09.PokemonDontGo.csproj", "{2FEFE3CE-6AEC-479F-8F46-955D6EAE1F57}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.SoftUniCoursePlanning", "10.SoftUniCoursePlanning\10.SoftUniCoursePlanning.csproj", "{FA66A8EB-C691-4596-B42E-B3A46A95BE0B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10.SoftUniCoursePlanning", "10.SoftUniCoursePlanning\10.SoftUniCoursePlanning.csproj", "{FA66A8EB-C691-4596-B42E-B3A46A95BE0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test", "test\test.csproj", "{50B63893-2EB1-4DEB-99D2-EE1F92263547}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{FA66A8EB-C691-4596-B42E-B3A46A95BE0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA66A8EB-C691-4596-B42E-B3A46A95BE0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA66A8EB-C691-4596-B42E-B3A46A95BE0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50B63893-2EB1-4DEB-99D2-EE1F92263547}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50B63893-2EB1-4DEB-99D2-EE1F92263547}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50B63893-2EB1-4DEB-99D2-EE1F92263547}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50B63893-2EB1-4DEB-99D2-EE1F92263547}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
