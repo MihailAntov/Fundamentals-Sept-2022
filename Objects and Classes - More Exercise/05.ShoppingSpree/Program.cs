@@ -37,27 +37,27 @@ namespace _05.ShoppingSpree
             while ((input = Console.ReadLine())!= "END")
             {
                 string[] cmdArgs = input.Split(" ");
-                Person nextPerson = people.Find(n=> n.name == cmdArgs[0]);
-                Product nextProduct = products.Find(n => n.name == cmdArgs[1]);
+                Person nextPerson = people.Find(n=> n.Name == cmdArgs[0]);
+                Product nextProduct = products.Find(n => n.Name == cmdArgs[1]);
 
-                if (nextProduct.cost > nextPerson.money)
+                if (nextProduct.Cost > nextPerson.Money)
                 {
-                    Console.WriteLine($"{nextPerson.name} can't afford {nextProduct.name}");
+                    Console.WriteLine($"{nextPerson.Name} can't afford {nextProduct.Name}");
                 }
                 else
                 {
-                    Console.WriteLine($"{nextPerson.name} bought {nextProduct.name}");
-                    nextPerson.money -= nextProduct.cost;
+                    Console.WriteLine($"{nextPerson.Name} bought {nextProduct.Name}");
+                    nextPerson.Money -= nextProduct.Cost;
                     nextPerson.bag.Add(nextProduct);
                 }
             }
 
             foreach(Person person in people)
             {
-                Console.Write($"{person.name} - ");
+                Console.Write($"{person.Name} - ");
                 if(person.bag.Count > 0)
                 {
-                    Console.Write(String.Join(", ",person.bag.Select(n=>n.name)));
+                    Console.Write(String.Join(", ",person.bag.Select(n=>n.Name)));
                 }
                 else
                 {
@@ -73,22 +73,22 @@ namespace _05.ShoppingSpree
     {
         public Person(string name, decimal money)
         {
-            this.name = name;
-            this.money = money;
+            Name = name;
+            Money = money;
         }
         public List<Product> bag = new List<Product>();
-        public string name;
-        public decimal money;
+        public string Name { get; set; }
+        public decimal Money { get; set; }
     }
 
     public class Product
     {
         public Product(string name, decimal cost)
         {
-            this.name = name;
-            this.cost = cost;
+            Name = name;
+            Cost = cost;
         }
-        public string name;
-        public decimal cost;
+        public string Name { get; set; }
+        public decimal Cost { get; set; }
     }
 }
