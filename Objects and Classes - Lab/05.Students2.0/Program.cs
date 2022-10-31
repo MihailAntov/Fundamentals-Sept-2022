@@ -21,22 +21,24 @@ namespace _04.Students
                         studentExists = true;
                         students[i].age = int.Parse(cmdArgs[2]);
                         students[i].homeTown = cmdArgs[3];
+
                         break;
                     }
                 }
 
-                if(!studentExists)
-                {
-                    students.Add(new Student(cmdArgs[0], cmdArgs[1], int.Parse(cmdArgs[2]), cmdArgs[3]));
-                }
+                if(!studentExists) students.Add(new Student(cmdArgs[0], cmdArgs[1], int.Parse(cmdArgs[2]), cmdArgs[3]));
+                
                 
             }
 
             string queriedCity = Console.ReadLine();
 
-            foreach (Student student in students.Where(student => student.homeTown == queriedCity))
+            for (int i =0; i < students.Count(); i++)
             {
-                Console.WriteLine($"{student.firstName} {student.lastName} is {student.age} years old.");
+                if (students[i].homeTown == queriedCity)
+                {
+                    Console.WriteLine($"{students[i].firstName} {students[i].lastName} is {students[i].age} years old.");
+                }    
             }
         }
     }
