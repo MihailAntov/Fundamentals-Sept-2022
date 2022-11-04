@@ -8,36 +8,35 @@ namespace _07.VehicleCatalogue
         static void Main(string[] args)
         {
             string input;
+
             Catalog catalog = new Catalog();
-            catalog.collectionOfTrucks = new List<Truck>();
-            catalog.collectionOfCars = new List<Car>();
             while ((input = Console.ReadLine())!= "end")
             {
                 string[] cmdArgs = input.Split("/", StringSplitOptions.RemoveEmptyEntries);
                 if (cmdArgs[0] == "Car")
                 {
-                    catalog.collectionOfCars.Add(new Car(cmdArgs[1], cmdArgs[2], double.Parse(cmdArgs[3])));   
+                    catalog.CollectionOfCars.Add(new Car(cmdArgs[1], cmdArgs[2], double.Parse(cmdArgs[3])));   
                 }
                 else if (cmdArgs[0] == "Truck")
                 {
-                    catalog.collectionOfTrucks.Add(new Truck(cmdArgs[1], cmdArgs[2], double.Parse(cmdArgs[3])));
+                    catalog.CollectionOfTrucks.Add(new Truck(cmdArgs[1], cmdArgs[2], double.Parse(cmdArgs[3])));
                 }
             }
-            if(catalog.collectionOfCars.Count > 0)
+            if(catalog.CollectionOfCars.Count > 0)
             {
                 Console.WriteLine("Cars:");
-                foreach (Car car in catalog.collectionOfCars.OrderBy(c => c.brand))
+                foreach (Car car in catalog.CollectionOfCars.OrderBy(c => c.Brand))
                 {
-                    Console.WriteLine($"{car.brand}: {car.model} - {car.horsePower}hp");
+                    Console.WriteLine($"{car.Brand}: {car.Model} - {car.HorsePower}hp");
                 }
             }
 
-            if (catalog.collectionOfTrucks.Count >0)
+            if (catalog.CollectionOfTrucks.Count >0)
             {
                 Console.WriteLine("Trucks:");
-                foreach (Truck truck in catalog.collectionOfTrucks.OrderBy(c => c.brand))
+                foreach (Truck truck in catalog.CollectionOfTrucks.OrderBy(c => c.Brand))
                 {
-                    Console.WriteLine($"{truck.brand}: {truck.model} - {truck.weight}kg");
+                    Console.WriteLine($"{truck.Brand}: {truck.Model} - {truck.Weight}kg");
                 }
             }
             
@@ -47,34 +46,43 @@ namespace _07.VehicleCatalogue
 
     public class Truck
     {
-        public Truck(string _brand, string _model, double _weight)
+        public Truck(string brand, string model, double weight)
         {
-            brand = _brand;
-            model = _model;
-            weight = _weight;
+            this.Brand = brand;
+            this.Model = model;
+            this.Weight = weight;
         }
-        public string brand;
-        public string model;
-        public double weight;
+        public string Brand { get; private set; }
+        public string Model { get; private set; }
+        public double Weight { get; private set; }
     }
 
     public class Car
     {
-        public string brand;
-        public string model;
-        public double horsePower;
-
-        public Car(string _brand, string _model, double _horsePower)
+        public Car(string brand, string model, double horsePower)
         {
-            brand = _brand;
-            model = _model;
-            horsePower = _horsePower;
+            this.Brand = brand;
+            this.Model = model;
+            this.HorsePower = horsePower;
         }
+        public string Brand { get; private set; }
+        public string Model { get; private set; }
+        public double HorsePower { get; private set; }
+
+
     }
 
     public class Catalog
     {
-        public List<Car> collectionOfCars;
-        public List<Truck> collectionOfTrucks;
+        private List<Car> collectionOfCars;
+        private List<Truck> collectionOfTrucks;
+        public Catalog()
+        {
+            this.collectionOfCars = new List<Car>();
+            this.collectionOfTrucks = new List<Truck>();
+        }
+
+        public List<Car> CollectionOfCars => this.collectionOfCars;
+        public List<Truck> CollectionOfTrucks => this.collectionOfTrucks;
     }
 }

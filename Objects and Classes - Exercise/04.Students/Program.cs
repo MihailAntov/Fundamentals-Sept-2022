@@ -11,13 +11,14 @@ namespace _04.Students
             Student[] students = new Student[n];
             for (int i = 0; i < n; i++)
             {
-                students[i] = new Student();
+                
                 string[] input = Console.ReadLine().Split(' ');
-                students[i].firstName = input[0];
-                students[i].lastName = input[1];
-                students[i].studentGrade = Double.Parse(input[2]);
+                string firstName = input[0];
+                string lastName = input[1];
+                double studentGrade = Double.Parse(input[2]);
+                students[i] = new Student(firstName, lastName, studentGrade);
             }
-            Student[] studentsSorted = students.OrderByDescending(c => c.studentGrade).ToArray();
+            Student[] studentsSorted = students.OrderByDescending(c => c.StudentGrade).ToArray();
             foreach(Student student in studentsSorted)
             {
                 Console.WriteLine(student.ToString());
@@ -26,17 +27,19 @@ namespace _04.Students
     }
     public class Student 
     {
-        public Student()
+        public Student(string firstName, string lastName, double studentGrade)
         {
-
+            this.FirstName = firstName;
+            this.LastName = lastName;
+            this.StudentGrade = studentGrade;
         }
-        public string firstName;
-        public string lastName;
-        public double studentGrade;
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public double StudentGrade { get; set; }
 
         public override string ToString()
         {
-            return $"{firstName} {lastName}: {studentGrade:f2}";
+            return $"{FirstName} {LastName}: {StudentGrade:f2}";
         }
 
         

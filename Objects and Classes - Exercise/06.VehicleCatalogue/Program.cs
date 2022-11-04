@@ -19,19 +19,19 @@ namespace _06.VehicleCatalogue
             string secondLineInput;
             while ((secondLineInput = Console.ReadLine())!= "Close the Catalogue")
             {
-                Vehicle currentlyDisplayedVehicle = vehicles.Find(n => n.model == secondLineInput);
-                Console.WriteLine($"Type: {currentlyDisplayedVehicle.type}");
-                Console.WriteLine($"Model: {currentlyDisplayedVehicle.model}");
-                Console.WriteLine($"Color: {currentlyDisplayedVehicle.color}");
-                Console.WriteLine($"Horsepower: {currentlyDisplayedVehicle.horsePower}");
+                Vehicle currentlyDisplayedVehicle = vehicles.Find(n => n.Model == secondLineInput);
+                Console.WriteLine($"Type: {currentlyDisplayedVehicle.Type}");
+                Console.WriteLine($"Model: {currentlyDisplayedVehicle.Model}");
+                Console.WriteLine($"Color: {currentlyDisplayedVehicle.Color}");
+                Console.WriteLine($"Horsepower: {currentlyDisplayedVehicle.HorsePower}");
             }
 
-            double totalCarHP = 1.0 * vehicles.Where(n => n.type == "Car").Select(n => n.horsePower).Sum();
-            double totalCarCount =1.0 * vehicles.Where(n => n.type == "Car").Count();
+            double totalCarHP = 1.0 * vehicles.Where(n => n.Type == "Car").Select(n => n.HorsePower).Sum();
+            double totalCarCount =1.0 * vehicles.Where(n => n.Type == "Car").Count();
             
 
-            double totalTruckHP = 1.0 * vehicles.Where(n => n.type == "Truck").Select(n => n.horsePower).Sum();
-            double totalTruckCount = 1.0 * vehicles.Where(n => n.type == "Truck").Count();
+            double totalTruckHP = 1.0 * vehicles.Where(n => n.Type == "Truck").Select(n => n.HorsePower).Sum();
+            double totalTruckCount = 1.0 * vehicles.Where(n => n.Type == "Truck").Count();
 
             if(totalCarCount == 0)
             {
@@ -58,17 +58,19 @@ namespace _06.VehicleCatalogue
 
     public class Vehicle
     {
-        public string type;
-        public string model;
-        public string color;
-        public int horsePower;
         public Vehicle(string type, string model, string color, int horsePower)
         {
 
-            this.type = type[0].ToString().ToUpper() + type.Substring(1);
-            this.model = model[0].ToString().ToUpper() + model.Substring(1);
-            this.color = color;
-            this.horsePower = horsePower;
+            this.Type = type[0].ToString().ToUpper() + type.Substring(1);
+            this.Model = model[0].ToString().ToUpper() + model.Substring(1);
+            this.Color = color;
+            this.HorsePower = horsePower;
         }
+
+        public string Type { get; private set; }
+        public string Model { get; private set; }
+        public string Color { get; private set; }
+        public int HorsePower { get; private set; }
+
     }
 }

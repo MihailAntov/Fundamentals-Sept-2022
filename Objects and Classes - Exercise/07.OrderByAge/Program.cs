@@ -13,11 +13,11 @@ namespace _07.OrderByAge
             while ((input = Console.ReadLine())!= "End")
             {
                 string[] cmdArgs = input.Split(" ", StringSplitOptions.RemoveEmptyEntries);
-                if (people.Select(n => n.iD).Contains(cmdArgs[1]))
+                if (people.Select(n => n.ID).Contains(cmdArgs[1]))
                 {
-                    Person personBeingEditted = people.Find(n=> n.iD == cmdArgs[1]);
-                    personBeingEditted.name = cmdArgs[0];
-                    personBeingEditted.age = int.Parse(cmdArgs[2]);
+                    Person personBeingEditted = people.Find(n=> n.ID == cmdArgs[1]);
+                    personBeingEditted.Name = cmdArgs[0];
+                    personBeingEditted.Age = int.Parse(cmdArgs[2]);
                 }
                 else
                 {
@@ -25,23 +25,24 @@ namespace _07.OrderByAge
                 }
             }
 
-            foreach(Person person in people.OrderBy(n=>n.age))
+            foreach(Person person in people.OrderBy(n=>n.Age))
             {
-                Console.WriteLine($"{person.name} with ID: {person.iD} is {person.age} years old.");
+                Console.WriteLine($"{person.Name} with ID: {person.ID} is {person.Age} years old.");
             }
         }
     }
 
     public class Person
     {
-        public string name;
-        public string iD;
-        public int age;
         public Person(string name, string iD, int age)
         {
-            this.name = name;
-            this.iD = iD;
-            this.age = age;
+            this.Name = name;
+            this.ID = iD;
+            this.Age = age;
         }
+        public string Name { get; set; }
+        public string ID { get;  private set; }
+        public int Age { get;  set; }
+        
     }
 }

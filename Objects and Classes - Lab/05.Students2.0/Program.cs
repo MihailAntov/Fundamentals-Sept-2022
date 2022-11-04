@@ -16,11 +16,11 @@ namespace _04.Students
                 bool studentExists = false;
                 for (int i = 0; i < students.Count; i++)
                 {
-                    if (students[i].firstName == cmdArgs[0] && students[i].lastName == cmdArgs[1])
+                    if (students[i].FirstName == cmdArgs[0] && students[i].LastName == cmdArgs[1])
                     {
                         studentExists = true;
-                        students[i].age = int.Parse(cmdArgs[2]);
-                        students[i].homeTown = cmdArgs[3];
+                        students[i].Age = int.Parse(cmdArgs[2]);
+                        students[i].HomeTown = cmdArgs[3];
 
                         break;
                     }
@@ -35,9 +35,9 @@ namespace _04.Students
 
             for (int i =0; i < students.Count(); i++)
             {
-                if (students[i].homeTown == queriedCity)
+                if (students[i].HomeTown == queriedCity)
                 {
-                    Console.WriteLine($"{students[i].firstName} {students[i].lastName} is {students[i].age} years old.");
+                    Console.WriteLine($"{students[i].FirstName} {students[i].LastName} is {students[i].Age} years old.");
                 }    
             }
         }
@@ -45,17 +45,17 @@ namespace _04.Students
 
     public class Student
     {
-        public string firstName;
-        public string lastName;
-        public int age;
-        public string homeTown;
+        public string FirstName { get; private set; }
+        public string LastName { get; private set; }
+        public int Age { get; set; }
+        public string HomeTown { get; set; }
 
         public Student(string firstName, string lastName, int age, string homeTown)
         {
-            this.firstName = firstName;
-            this.lastName = lastName;
-            this.age = age;
-            this.homeTown = homeTown;
+            this.FirstName = firstName;
+            this.LastName = lastName;
+            this.Age = age;
+            this.HomeTown = homeTown;
         }
     }
 }

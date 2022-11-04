@@ -16,38 +16,38 @@ namespace _06.StoreBoxes
                 boxes.Add(new Box(cmdArgs[0], new Item(cmdArgs[1], decimal.Parse(cmdArgs[3])), int.Parse(cmdArgs[2])));
             }
             
-            foreach(Box box in boxes.OrderByDescending(b=>b.priceForABox))
+            foreach(Box box in boxes.OrderByDescending(b=>b.PriceForABox))
             {
-                Console.WriteLine(box.serialNumber);
-                Console.WriteLine($"-- {box.item.name} - ${box.item.Price:f2}: {box.itemQuantity}");
-                Console.WriteLine($"-- ${box.priceForABox:f2}");
+                Console.WriteLine(box.SerialNumber);
+                Console.WriteLine($"-- {box.Item.Name} - ${box.Item.Price:f2}: {box.ItemQuantity}");
+                Console.WriteLine($"-- ${box.PriceForABox:f2}");
             }
         }
     }
 
     public class Item
     {
-        public Item(string _name, decimal _price)
+        public Item(string name, decimal price)
         {
-            name = _name;
-            Price = _price;
+            this.Name = name;
+            this.Price = price;
         }
-        public string name;
-        public decimal Price;
+        public string Name { get; private set; }
+        public decimal Price { get; private set; }
     }
 
     public class Box
     {
-        public Box(string _serialNumber, Item _item, int _itemQuantity)
+        public Box(string serialNumber, Item item, int itemQuantity)
         {
-            serialNumber = _serialNumber;
-            item = _item;
-            itemQuantity = _itemQuantity;
-            priceForABox = item.Price * itemQuantity;
+            this.SerialNumber = serialNumber;
+            this.Item = item;
+            this.ItemQuantity = itemQuantity;
+            this.PriceForABox = this.Item.Price * this.ItemQuantity;
         }
-        public string serialNumber;
-        public Item item;
-        public int itemQuantity;
-        public decimal priceForABox;
+        public string SerialNumber { get; private set; }
+        public Item Item { get; private set; }
+        public int ItemQuantity { get; private set; }
+        public decimal PriceForABox { get; private set; }
     }
 }
