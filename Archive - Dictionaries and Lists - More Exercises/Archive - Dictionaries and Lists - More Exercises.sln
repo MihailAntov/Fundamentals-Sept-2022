@@ -3,13 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.SortTimes", "01.SortTimes\01.SortTimes.csproj", "{6AA3219D-49BA-47F9-B833-0A7085AAC32D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01.SortTimes", "01.SortTimes\01.SortTimes.csproj", "{6AA3219D-49BA-47F9-B833-0A7085AAC32D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.OddFilter", "02.OddFilter\02.OddFilter.csproj", "{A19B4B7E-FB66-4ECE-8C9B-54E21DBA83EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02.OddFilter", "02.OddFilter\02.OddFilter.csproj", "{A19B4B7E-FB66-4ECE-8C9B-54E21DBA83EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.ImmuneSystem", "03.ImmuneSystem\03.ImmuneSystem.csproj", "{D47EF721-45A3-43EC-A015-DC7189B50377}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03.ImmuneSystem", "03.ImmuneSystem\03.ImmuneSystem.csproj", "{D47EF721-45A3-43EC-A015-DC7189B50377}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.SupermarketDatabase", "04.SupermarketDatabase\04.SupermarketDatabase.csproj", "{99FDCCD2-6690-4BFD-96F5-F3E3A481AE57}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04.SupermarketDatabase", "04.SupermarketDatabase\04.SupermarketDatabase.csproj", "{99FDCCD2-6690-4BFD-96F5-F3E3A481AE57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.ParkingValidation", "05.ParkingValidation\05.ParkingValidation.csproj", "{E6334A99-458C-4603-A3DF-5F73EF2DFE29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.ByteFlip", "06.ByteFlip\06.ByteFlip.csproj", "{B84F40BB-4D6F-4559-A5F2-BC82EDF0049D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.TakeSkipRope", "07.TakeSkipRope\07.TakeSkipRope.csproj", "{7D208011-655E-4C8B-A38D-7DF25FE2F3DC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +39,18 @@ Global
 		{99FDCCD2-6690-4BFD-96F5-F3E3A481AE57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99FDCCD2-6690-4BFD-96F5-F3E3A481AE57}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99FDCCD2-6690-4BFD-96F5-F3E3A481AE57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6334A99-458C-4603-A3DF-5F73EF2DFE29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6334A99-458C-4603-A3DF-5F73EF2DFE29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6334A99-458C-4603-A3DF-5F73EF2DFE29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6334A99-458C-4603-A3DF-5F73EF2DFE29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B84F40BB-4D6F-4559-A5F2-BC82EDF0049D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B84F40BB-4D6F-4559-A5F2-BC82EDF0049D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B84F40BB-4D6F-4559-A5F2-BC82EDF0049D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B84F40BB-4D6F-4559-A5F2-BC82EDF0049D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D208011-655E-4C8B-A38D-7DF25FE2F3DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D208011-655E-4C8B-A38D-7DF25FE2F3DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D208011-655E-4C8B-A38D-7DF25FE2F3DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D208011-655E-4C8B-A38D-7DF25FE2F3DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
