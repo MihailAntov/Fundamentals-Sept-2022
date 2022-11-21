@@ -3,17 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.OrderByAge", "01.OrderByAge\01.OrderByAge.csproj", "{D60A8D61-6AD3-4431-821D-99979CD8DC1F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01.OrderByAge", "01.OrderByAge\01.OrderByAge.csproj", "{D60A8D61-6AD3-4431-821D-99979CD8DC1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.VehicleCatalogue", "02.VehicleCatalogue\02.VehicleCatalogue.csproj", "{317A95CE-7269-4D88-B7D4-B5557F108016}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02.VehicleCatalogue", "02.VehicleCatalogue\02.VehicleCatalogue.csproj", "{317A95CE-7269-4D88-B7D4-B5557F108016}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.Jarvis", "03.Jarvis\03.Jarvis.csproj", "{BF700523-12C9-46A9-92C2-207FDDE21513}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03.Jarvis", "03.Jarvis\03.Jarvis.csproj", "{BF700523-12C9-46A9-92C2-207FDDE21513}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test", "test\test.csproj", "{B877E379-63D8-4E44-94D8-5DCB67BA226E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "test", "test\test.csproj", "{B877E379-63D8-4E44-94D8-5DCB67BA226E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.PunctuationFinder", "04.PunctuationFinder\04.PunctuationFinder.csproj", "{D41AB93B-DF33-4834-95B5-52D898752A32}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04.PunctuationFinder", "04.PunctuationFinder\04.PunctuationFinder.csproj", "{D41AB93B-DF33-4834-95B5-52D898752A32}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.WriteToFile", "05.WriteToFile\05.WriteToFile.csproj", "{E1BB35DB-A280-4464-BE18-DD9941FE4387}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05.WriteToFile", "05.WriteToFile\05.WriteToFile.csproj", "{E1BB35DB-A280-4464-BE18-DD9941FE4387}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.EXCELlentKnowledge", "06.EXCELlentKnowledge\06.EXCELlentKnowledge.csproj", "{60E63725-9C22-44AF-A9AC-041F603F317B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.PlayCatch", "07.PlayCatch\07.PlayCatch.csproj", "{CEF2D676-BC9C-4B54-ACDF-34BEA486EAE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.PersonalException", "08.PersonalException\08.PersonalException.csproj", "{3BE14E6F-E9A2-4FED-81F3-CE8BFFA84096}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +51,18 @@ Global
 		{E1BB35DB-A280-4464-BE18-DD9941FE4387}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1BB35DB-A280-4464-BE18-DD9941FE4387}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1BB35DB-A280-4464-BE18-DD9941FE4387}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60E63725-9C22-44AF-A9AC-041F603F317B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60E63725-9C22-44AF-A9AC-041F603F317B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60E63725-9C22-44AF-A9AC-041F603F317B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60E63725-9C22-44AF-A9AC-041F603F317B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEF2D676-BC9C-4B54-ACDF-34BEA486EAE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEF2D676-BC9C-4B54-ACDF-34BEA486EAE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEF2D676-BC9C-4B54-ACDF-34BEA486EAE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEF2D676-BC9C-4B54-ACDF-34BEA486EAE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BE14E6F-E9A2-4FED-81F3-CE8BFFA84096}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BE14E6F-E9A2-4FED-81F3-CE8BFFA84096}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BE14E6F-E9A2-4FED-81F3-CE8BFFA84096}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BE14E6F-E9A2-4FED-81F3-CE8BFFA84096}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
