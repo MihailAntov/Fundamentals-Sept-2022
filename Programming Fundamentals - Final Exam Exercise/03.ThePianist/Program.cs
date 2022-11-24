@@ -9,18 +9,18 @@ namespace _03.ThePianist
         {
             int n = int.Parse(Console.ReadLine());
             Dictionary<string, Piece> pieces = new Dictionary<string, Piece>();
-            for (int i = 0; i <n; i++)
+            for (int i = 0; i < n; i++)
             {
                 string[] inputArgs = Console.ReadLine()
                     .Split("|", StringSplitOptions.RemoveEmptyEntries);
 
-                pieces.Add(inputArgs[0],new Piece(inputArgs[1], inputArgs[2]));
-                
+                pieces.Add(inputArgs[0], new Piece(inputArgs[1], inputArgs[2]));
+
             }
 
             string input;
 
-            while ((input = Console.ReadLine())!= "Stop")
+            while ((input = Console.ReadLine()) != "Stop")
             {
                 string[] cmdArgs = input.Split("|", StringSplitOptions.RemoveEmptyEntries);
 
@@ -29,8 +29,8 @@ namespace _03.ThePianist
                 switch (command)
                 {
                     case "Add":
-                        
-                        if(pieces.ContainsKey(piece))
+
+                        if (pieces.ContainsKey(piece))
                         {
                             Console.WriteLine($"{piece} is already in the collection!");
                         }
@@ -43,7 +43,7 @@ namespace _03.ThePianist
                         }
                         break;
                     case "Remove":
-                        if(pieces.ContainsKey(piece))
+                        if (pieces.ContainsKey(piece))
                         {
                             pieces.Remove(piece);
                             Console.WriteLine($"Successfully removed {piece}!");
@@ -54,7 +54,7 @@ namespace _03.ThePianist
                         }
                         break;
                     case "ChangeKey":
-                        if(pieces.ContainsKey(piece))
+                        if (pieces.ContainsKey(piece))
                         {
                             string newKey = cmdArgs[2];
                             pieces[piece].Key = newKey;
@@ -69,7 +69,7 @@ namespace _03.ThePianist
                 }
             }
 
-            foreach(KeyValuePair<string, Piece> piece in pieces)
+            foreach (KeyValuePair<string, Piece> piece in pieces)
             {
                 Console.WriteLine($"{piece.Key} -> Composer: {piece.Value.Composer}, Key: {piece.Value.Key}");
             }

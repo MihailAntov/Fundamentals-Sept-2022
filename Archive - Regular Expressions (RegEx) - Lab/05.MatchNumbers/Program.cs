@@ -1,18 +1,18 @@
 ﻿using System;
 using System.Text.RegularExpressions;
-using System.Linq;
-namespace _03.MatchHexadecimalNumbers
+namespace _05.MatchNumbers
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            string input = Console.ReadLine();
-            string pattern = @"\b(0x)?[0-9A-F]+\b";
-
+            string pattern = @"(^|(?<=\s))(?<number>\-?\d+(\.{1}\d+)?)($|(?=\s))";
             Regex regex = new Regex(pattern);
 
+            string input = Console.ReadLine();
+
             MatchCollection matches = regex.Matches(input);
+
             Console.WriteLine(String.Join(" ",matches));
         }
     }

@@ -8,6 +8,8 @@ namespace test
     {
         static void Main(string[] args)
         {
+            
+            
             string input;
             List<Town> towns = new List<Town>();
             while((input = Console.ReadLine())!= "End")
@@ -114,7 +116,7 @@ namespace test
             students = students
                 .OrderBy(n => n.RegistrationDate)
                 .ThenBy(n => n.Name)
-                .ThenBy(n => n.Email)
+                .ThenBy(n => n.Email.Substring(0, n.Email.IndexOf('@')))
                 .ToList();
 
             while (students.Count > 0)

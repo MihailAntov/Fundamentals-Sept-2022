@@ -1,19 +1,19 @@
 ﻿using System;
 using System.Text.RegularExpressions;
-using System.Linq;
-namespace _03.MatchHexadecimalNumbers
+namespace _01.ExtractEmails
 {
     internal class Program
     {
         static void Main(string[] args)
         {
             string input = Console.ReadLine();
-            string pattern = @"\b(0x)?[0-9A-F]+\b";
+
+            string pattern = @"(?<=\s)[a-z\d]+([\.\,\-_][a-z\d]+)*@[a-z]+(-[a-z]+)*(\.[a-z]+(-[a-z]+)*)+";
 
             Regex regex = new Regex(pattern);
-
             MatchCollection matches = regex.Matches(input);
-            Console.WriteLine(String.Join(" ",matches));
+
+            Console.WriteLine(String.Join(Environment.NewLine, matches));
         }
     }
 }
