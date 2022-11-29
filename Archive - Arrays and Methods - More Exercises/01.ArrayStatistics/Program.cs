@@ -7,14 +7,20 @@ namespace _01.ArrayStatistics
         static void Main(string[] args)
         {
             int[] nums = Console.ReadLine()
-                .Split(" ", StringSplitOptions.RemoveEmptyEntries)
+                .Split(' ')
                 .Select(n => int.Parse(n))
                 .ToArray();
 
             Console.WriteLine($"Min = {nums.Min()}");
             Console.WriteLine($"Max = {nums.Max()}");
-            Console.WriteLine($"Sum = {nums.Sum()}");
+            long sum = 0;
+            foreach (int n in nums)
+            {
+                sum += n;
+            }
+            Console.WriteLine($"Sum = {sum}");
             Console.WriteLine($"Average = {nums.Average()}");
+            //passes as c# code
         }
     }
 }

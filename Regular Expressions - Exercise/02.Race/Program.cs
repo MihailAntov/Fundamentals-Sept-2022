@@ -8,32 +8,32 @@ namespace _02.Race
     {
         static void Main(string[] args)
         {
-            List<Racer> results = new List<Racer>(); 
+            List<Racer> results = new List<Racer>();
             string[] racers = Console.ReadLine()
                 .Split(", ");
 
-            foreach(string racer in racers)
+            foreach (string racer in racers)
             {
                 results.Add(new Racer(racer, 0));
             }
             string input;
             string digitMatch = @"\d";
             string letterMatch = @"[A-Z]|[a-z]";
-            while ((input = Console.ReadLine())!= "end of race")
+            while ((input = Console.ReadLine()) != "end of race")
             {
                 MatchCollection digitsMatches = Regex.Matches(input, digitMatch);
                 MatchCollection lettersMatches = Regex.Matches(input, letterMatch);
                 int[] digitsArray = digitsMatches.Select(n => int.Parse(n.Value)).ToArray();
-               
+
                 string letters = string.Join("", lettersMatches);
-                if(results.Select(n=>n.Name).Contains(letters))
+                if (results.Select(n => n.Name).Contains(letters))
                 {
                     Racer racer = results.FirstOrDefault(n => n.Name == letters);
                     racer.Score += digitsArray.Sum();
                 }
             }
             int placeCounter = 0;
-            foreach(Racer racer in results.OrderByDescending(n=>n.Score))
+            foreach (Racer racer in results.OrderByDescending(n => n.Score))
             {
                 placeCounter++;
                 switch (placeCounter)
@@ -51,11 +51,11 @@ namespace _02.Race
                         break;
                 }
 
-                if(placeCounter<=3)
+                if (placeCounter <= 3)
                 {
                     Console.Write($" place: {racer.Name}\n");
                 }
-                
+
             }
         }
     }
@@ -72,3 +72,6 @@ namespace _02.Race
         public int Score { get; set; }
     }
 }
+
+
+
