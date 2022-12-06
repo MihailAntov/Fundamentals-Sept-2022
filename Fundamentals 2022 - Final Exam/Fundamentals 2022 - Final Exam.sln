@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.Hogwarts", "01.Hogwarts\01.Hogwarts.csproj", "{FE362A20-862E-433D-8576-F65D8EA07E5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.MessageDecrypter", "02.MessageDecrypter\02.MessageDecrypter.csproj", "{10994DB6-D2D4-40DF-B86C-A80FB467E1E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.Followers", "03.Followers\03.Followers.csproj", "{07E05A13-ED34-4B9E-B837-3F2ABE34A326}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test", "test\test.csproj", "{DE8AF3B5-98CC-46EC-81EC-CC95349D9090}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE362A20-862E-433D-8576-F65D8EA07E5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE362A20-862E-433D-8576-F65D8EA07E5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE362A20-862E-433D-8576-F65D8EA07E5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE362A20-862E-433D-8576-F65D8EA07E5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10994DB6-D2D4-40DF-B86C-A80FB467E1E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10994DB6-D2D4-40DF-B86C-A80FB467E1E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10994DB6-D2D4-40DF-B86C-A80FB467E1E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10994DB6-D2D4-40DF-B86C-A80FB467E1E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07E05A13-ED34-4B9E-B837-3F2ABE34A326}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07E05A13-ED34-4B9E-B837-3F2ABE34A326}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07E05A13-ED34-4B9E-B837-3F2ABE34A326}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07E05A13-ED34-4B9E-B837-3F2ABE34A326}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE8AF3B5-98CC-46EC-81EC-CC95349D9090}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE8AF3B5-98CC-46EC-81EC-CC95349D9090}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE8AF3B5-98CC-46EC-81EC-CC95349D9090}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE8AF3B5-98CC-46EC-81EC-CC95349D9090}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9D476EE8-7523-4F43-B29E-B3612C7C30F1}
+	EndGlobalSection
+EndGlobal

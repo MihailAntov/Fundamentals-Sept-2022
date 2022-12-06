@@ -21,17 +21,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02.DestinationMapper", "02.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02.MirrorWords", "02.MirrorWords\02.MirrorWords.csproj", "{7C48D6C8-F71C-4CF7-9717-A7F09C91C081}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.NeedForSpeedIII", "03.NeedForSpeedIII\03.NeedForSpeedIII.csproj", "{46CC1CAC-6758-47EC-A1AA-60484F3A1EB3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03.NeedForSpeedIII", "03.NeedForSpeedIII\03.NeedForSpeedIII.csproj", "{46CC1CAC-6758-47EC-A1AA-60484F3A1EB3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.PasswordReset", "01.PasswordReset\01.PasswordReset.csproj", "{3650B229-0534-4C9E-8819-F33C85FFE9E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01.PasswordReset", "01.PasswordReset\01.PasswordReset.csproj", "{3650B229-0534-4C9E-8819-F33C85FFE9E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.HeroesOfCodeAndLogicVII", "03.HeroesOfCodeAndLogicVII\03.HeroesOfCodeAndLogicVII.csproj", "{F0801F7A-463F-4631-8F9A-AA4C7025C863}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03.HeroesOfCodeAndLogicVII", "03.HeroesOfCodeAndLogicVII\03.HeroesOfCodeAndLogicVII.csproj", "{F0801F7A-463F-4631-8F9A-AA4C7025C863}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.ActivationKeys", "01.ActivationKeys\01.ActivationKeys.csproj", "{8C52752B-E86F-4F80-B864-1F07E7270163}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01.ActivationKeys", "01.ActivationKeys\01.ActivationKeys.csproj", "{8C52752B-E86F-4F80-B864-1F07E7270163}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.EmojiDetector", "02.EmojiDetector\02.EmojiDetector.csproj", "{F7AF2BF1-326B-4A0A-A438-97D2997211F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02.EmojiDetector", "02.EmojiDetector\02.EmojiDetector.csproj", "{F7AF2BF1-326B-4A0A-A438-97D2997211F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.P!rates", "03.P!rates\03.P!rates.csproj", "{E84593E5-8200-49C4-B60F-0D310464B9C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03.P!rates", "03.P!rates\03.P!rates.csproj", "{E84593E5-8200-49C4-B60F-0D310464B9C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test", "test\test.csproj", "{1B0B4138-DC7A-4380-9F1F-03696A0E3CD9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +101,10 @@ Global
 		{E84593E5-8200-49C4-B60F-0D310464B9C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E84593E5-8200-49C4-B60F-0D310464B9C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E84593E5-8200-49C4-B60F-0D310464B9C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B0B4138-DC7A-4380-9F1F-03696A0E3CD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B0B4138-DC7A-4380-9F1F-03696A0E3CD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B0B4138-DC7A-4380-9F1F-03696A0E3CD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B0B4138-DC7A-4380-9F1F-03696A0E3CD9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
